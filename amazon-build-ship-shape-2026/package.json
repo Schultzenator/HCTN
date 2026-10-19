@@ -1,0 +1,26 @@
+{
+  "name": "household-ops-mcp",
+  "version": "1.0.0",
+  "description": "Self-hosted MCP server (Streamable HTTP, MCP spec 2025-11-25+) demoing an Alexa+ household integration. Amazon Build, Ship, Shape 2026 - Alexa+ track.",
+  "type": "module",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.json && node --test dist/test/*.test.js",
+    "demo": "npm run build && node dist/src/server.js & sleep 1 && bash demo/demo-alexa-turn.sh"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
