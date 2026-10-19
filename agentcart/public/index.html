@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AgentCart — autonomous shopping agent</title>
+<style>
+  :root { color-scheme: dark; }
+  body { font-family: system-ui, sans-serif; background: #0d1117; color: #e6edf3; max-width: 880px; margin: 0 auto; padding: 24px; }
+  h1 { margin: 0 0 4px; } .sub { color: #8b949e; margin-bottom: 20px; }
+  .goalbar { display: flex; gap: 8px; }
+  input[type=text] { flex: 1; padding: 10px 12px; border-radius: 8px; border: 1px solid #30363d; background: #161b22; color: #e6edf3; }
+  button { padding: 10px 16px; border-radius: 8px; border: 0; background: #238636; color: #fff; font-weight: 600; cursor: pointer; }
+  button.secondary { background: #21262d; border: 1px solid #30363d; }
+  button:disabled { opacity: .5; cursor: default; }
+  #timeline { margin-top: 24px; }
+  .ev { padding: 8px 12px; border-left: 3px solid #30363d; margin-bottom: 6px; border-radius: 4px; background: #161b22; }
+  .ev.think { border-color: #8957e5; } .ev.tool { border-color: #1f6feb; }
+  .ev.info { border-color: #238636; } .ev.error { border-color: #f85149; }
+  .ev.plan { border-color: #d29922; }
+  .ev .kind { font-size: 11px; text-transform: uppercase; color: #8b949e; margin-right: 8px; }
+  .card { border: 1px solid #30363d; border-radius: 12px; padding: 16px; margin-top: 16px; background: #161b22; }
+  .row { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; }
+  .total { font-weight: 700; border-top: 1px solid #30363d; margin-top: 8px; padding-top: 8px; }
+  .actions { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .ok { color: #3fb950; } .err { color: #f85149; }
+</style>
+</head>
+<body>
+  <h1>AgentCart <span style="font-size:14px;color:#8b949e">(sandbox only — no real money)</span></h1>
+  <div class="sub">Autonomous shopping agent: goal → plan → PayPal order → capture → after-sales.</div>
+
+  <div class="goalbar">
+    <input id="goal" type="text" placeholder="e.g. Set up a home office for $300" value="Set up a home office for $300" />
+    <button id="run">Run agent</button>
+  </div>
+
+  <div id="timeline"></div>
+  <div id="result"></div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let currentOrder = null;
+
+function addEvent(e) {
+  const div = document.createElement("div");
+  div.className = "ev " + e.kind;
+  div.innerHTML = `<span class="kind">${e.kind}</span>${e.message}`;
+  $("timeline").appendChild(div);
+}
+
+$("run").onclick = async () => {
+  $("timeline").innerHTML = ""; $("result").innerHTML = "";
+  const goal = $("goal").value;
+  $("run").disabled = true;
+  try {
+    const res = await fetch("/api/agent/goal", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ goal })
+    });
+    const data = await res.json();
+    if (data.error) { addEvent({ kind: "error", message: data.error }); return; }
+    data.events.forEach(addEvent);
+    currentOrder = data.order;
+    renderCart(data);
+  } catch (e) {
+    addEvent({ kind: "error", message: String(e) });
+  } finally {
+    $("run").disabled = false;
+  }
+};
+
+function renderCart(data) {
+  let html = `<div class="card"><strong>Cart</strong>`;
+  for (const c of data.cart) {
+    html += `<div class="row"><span>${c.name} × ${c.quantity}</span><span>$${c.unitPrice.toFixed(2)}</span></div>`;
+  }
+  html += `<div class="row total"><span>Total ${data.withinBudget ? '<span class="ok">✓ within budget</span>' : '<span class="err">✗ over budget</span>'}</span><span>$${data.total.toFixed(2)}</span></div>`;
+  html += `<div class="actions">
+    <a href="${data.order.approveUrl}" target="_blank"><button class="secondary">1. Approve order (buyer)</button></a>
+    <button id="capture" class="secondary" ${data.order ? "" : "disabled"}>2. Capture payment</button>
+    <input id="refundAmt" type="number" step="0.01" placeholder="refund $" style="width:110px;padding:10px;border-radius:8px;border:1px solid #30363d;background:#161b22;color:#e6edf3">
+    <button id="refund" class="secondary">3. Partial refund</button>
+  </div><div id="payresult"></div></div>`;
+  $("result").innerHTML = html;
+  if (data.order.approveUrl.startsWith("/mock/")) {
+    // In mock mode, the approve button hits the local simulation.
+    document.querySelector('a[href="' + data.order.approveUrl + '"] button').onclick = async (ev) => {
+      ev.preventDefault();
+      const r = await fetch("/mock/paypal/approve/" + data.order.orderId, { method: "POST" });
+      const d = await r.json();
+      $("payresult").innerHTML = d.ok ? `<p class="ok">Order approved (mock buyer).</p>` : `<p class="err">${d.error}</p>`;
+    };
+  }
+  $("capture").onclick = async () => {
+    const r = await fetch("/api/paypal/capture/" + currentOrder.orderId, { method: "POST" });
+    const d = await r.json();
+    $("payresult").innerHTML = d.captureId
+      ? `<p class="ok">Payment captured — capture ID ${d.captureId}; merchant net $${d.grossAmount.toFixed(2)} (fee $${d.fee.toFixed(2)}).</p>`
+      : `<p class="err">${d.error}</p>`;
+  };
+  $("refund").onclick = async () => {
+    const amount = Number($("refundAmt").value);
+    const r = await fetch("/api/paypal/refund/" + currentOrder.orderId, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount })
+    });
+    const d = await r.json();
+    $("payresult").innerHTML += d.refundId
+      ? `<p class="ok">Refund ${d.refundId} issued: $${d.amount.toFixed(2)}.</p>`
+      : `<p class="err">${d.error}</p>`;
+  };
+}
+</script>
+</body>
+</html>
