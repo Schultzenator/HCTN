@@ -1,0 +1,19 @@
+{
+  "name": "opportunity-radar",
+  "version": "0.1.0",
+  "description": "Evidence-first opportunity federation and recommendation agent",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "exports": "./dist/index.js",
+  "bin": { "opportunity-radar": "./dist/cli.js" },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "demo": "npm run build --silent && node dist/cli.js",
+    "live": "npm run build --silent && node dist/cli.js --live"
+  },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.7.0" }
+}

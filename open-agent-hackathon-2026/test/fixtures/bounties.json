@@ -1,0 +1,54 @@
+[
+  {
+    "id": "board:agents",
+    "title": "Agent Federation Challenge mirror",
+    "kind": "hackathon",
+    "tags": [
+      "open-source",
+      "agents"
+    ],
+    "evidence": [
+      {
+        "url": "https://example.org/synthetic/agent-federation",
+        "source": "fixture:bounty-board"
+      },
+      {
+        "url": "https://example.org/synthetic/board/agents",
+        "source": "fixture:bounty-board"
+      }
+    ],
+    "description": "Synthetic mirror listing for the same agent federation event."
+  },
+  {
+    "id": "board:issue42",
+    "title": "Synthetic TypeScript connector bounty",
+    "kind": "issue",
+    "tags": [
+      "typescript",
+      "data"
+    ],
+    "evidence": [
+      {
+        "url": "https://github.com/example/radar-fixture/issues/42?utm_source=board",
+        "source": "fixture:bounty-board"
+      }
+    ],
+    "description": "Synthetic issue listing; payment and eligibility are unverified."
+  },
+  {
+    "id": "board:docs",
+    "title": "Synthetic documentation bounty",
+    "kind": "bounty",
+    "tags": [
+      "docs",
+      "open-source"
+    ],
+    "evidence": [
+      {
+        "url": "https://example.org/synthetic/docs",
+        "source": "fixture:bounty-board"
+      }
+    ],
+    "description": "Synthetic documentation task; inspect original evidence before applying."
+  }
+]

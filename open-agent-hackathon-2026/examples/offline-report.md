@@ -1,0 +1,73 @@
+# Opportunity Radar
+
+Mode: offline demo — all opportunities are synthetic fixtures | Model: deterministic mock \(no external LLM\)
+
+Profile: typescript agents data open-source
+
+Pipeline: 8 federated → 6 deduplicated → 5 evidence-backed recommendations.
+
+> Scores measure profile relevance, not verified eligibility or payment. Evidence links record provenance; review the original source before applying.
+
+## 1. Agent Federation Challenge mirror — 100/100
+
+Type: hackathon | Tags: agents, data, open-source, typescript
+
+Synthetic demo event: build agents that combine fragmented datasets. No real deadline or prize is claimed.
+
+**Why:** Profile tag matches: agents, data, open-source, typescript. 3 evidence link\(s\).
+
+**Evidence:**
+
+- [fixture:bounty-board](https://example.org/synthetic/agent-federation)
+- [fixture:calendar](https://example.org/synthetic/agent-federation)
+- [fixture:bounty-board](https://example.org/synthetic/board/agents)
+
+## 2. Synthetic TypeScript connector bounty — 80/100
+
+Type: issue | Tags: bounty, data, typescript
+
+Synthetic GitHub issue for a TypeScript data connector. This repository and issue are illustrative.
+
+**Why:** Profile tag matches: data, typescript. 2 evidence link\(s\).
+
+**Evidence:**
+
+- [fixture:bounty-board](https://github.com/example/radar-fixture/issues/42)
+- [fixture:github](https://github.com/example/radar-fixture/issues/42)
+
+## 3. Synthetic documentation bounty — 63/100
+
+Type: bounty | Tags: docs, open-source
+
+Synthetic documentation task; inspect original evidence before applying.
+
+**Why:** Profile tag matches: open-source. 1 evidence link\(s\).
+
+**Evidence:**
+
+- [fixture:bounty-board](https://example.org/synthetic/docs)
+
+## 4. Synthetic Design Sprint — 43/100
+
+Type: hackathon | Tags: design
+
+Synthetic design challenge for accessible interfaces.
+
+**Why:** No exact profile tag match; 1 evidence link\(s\).
+
+**Evidence:**
+
+- [fixture:calendar](https://example.org/synthetic/design)
+
+## 5. Synthetic Python parser issue — 43/100
+
+Type: issue | Tags: bounty, python
+
+Synthetic parser issue; no reward amount has been verified.
+
+**Why:** No exact profile tag match; 1 evidence link\(s\).
+
+**Evidence:**
+
+- [fixture:github](https://github.com/example/radar-fixture/issues/99)
+

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "event:agents",
+    "title": "Synthetic Agent Federation Challenge",
+    "kind": "hackathon",
+    "tags": [
+      "agents",
+      "data",
+      "typescript"
+    ],
+    "evidence": [
+      {
+        "url": "https://example.org/synthetic/agent-federation?utm_source=calendar",
+        "source": "fixture:calendar"
+      }
+    ],
+    "description": "Synthetic demo event: build agents that combine fragmented datasets. No real deadline or prize is claimed."
+  },
+  {
+    "id": "event:design",
+    "title": "Synthetic Design Sprint",
+    "kind": "hackathon",
+    "tags": [
+      "design"
+    ],
+    "evidence": [
+      {
+        "url": "https://example.org/synthetic/design",
+        "source": "fixture:calendar"
+      }
+    ],
+    "description": "Synthetic design challenge for accessible interfaces."
+  },
+  {
+    "id": "event:unverified",
+    "title": "Unlinked prize rumor",
+    "kind": "hackathon",
+    "tags": [
+      "agents"
+    ],
+    "evidence": [],
+    "description": "Synthetic record without evidence: excluded from ranking."
+  }
+]

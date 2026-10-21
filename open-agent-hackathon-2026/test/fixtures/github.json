@@ -1,0 +1,34 @@
+[
+  {
+    "id": "github:42",
+    "title": "Synthetic connector issue",
+    "kind": "issue",
+    "tags": [
+      "bounty",
+      "typescript"
+    ],
+    "evidence": [
+      {
+        "url": "https://github.com/example/radar-fixture/issues/42",
+        "source": "fixture:github"
+      }
+    ],
+    "description": "Synthetic GitHub issue for a TypeScript data connector. This repository and issue are illustrative."
+  },
+  {
+    "id": "github:99",
+    "title": "Synthetic Python parser issue",
+    "kind": "issue",
+    "tags": [
+      "python",
+      "bounty"
+    ],
+    "evidence": [
+      {
+        "url": "https://github.com/example/radar-fixture/issues/99",
+        "source": "fixture:github"
+      }
+    ],
+    "description": "Synthetic parser issue; no reward amount has been verified."
+  }
+]
