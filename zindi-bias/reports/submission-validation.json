@@ -17,15 +17,5 @@
     "finite numeric scores",
     "[0,1] bounds"
   ],
-  "limitation": "Local format validation only; no Zindi upload or accuracy claim.",
-  "region_counts": {
-    "northern-ca": 591,
-    "eastern-ok": 1192,
-    "maricopa-az": 1593,
-    "south-central-tx": 6003
-  },
-  "baseline": "constant 0.5, no fitted model",
-  "official_zindi_sample_verified": false,
-  "sample_provenance": "Concatenation of four public Source Cooperative regional samples",
-  "reason": "Zindi SampleSubmission.csv endpoint returns HTTP 401 without authentication"
+  "limitation": "Local format validation only; no Zindi upload or accuracy claim."
 }

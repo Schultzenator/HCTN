@@ -29,3 +29,5 @@ Continuation:
 - The operator alone performs any upload. No push or submission is authorized or needed here.
 
 Evidence: `reports/data-audit.json`, `reports/cv-results.json`, `reports/pipeline-check.json`, `reports/submission-validation.json`, and `data/download-manifest.json`.
+
+Reverification on 2026-10-22: refreshed the anonymous object inventory; reran the data audit, submission validator and synthetic pipeline checks successfully; independently matched all 12 download SHA-256 hashes. Both official sample URL variants (with and without the null auth query) returned HTTP 401. Browser inventory has no connected sessions. No new legitimate labels were found. See `reports/reverification.json`.
