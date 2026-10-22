@@ -27,3 +27,12 @@ Region counts: Northern California 591; Eastern Oklahoma 1,192; Maricopa 1,593; 
 This is a conservative, label-free starting artifact with unknown predictive quality. Format validation does not establish acceptance by Zindi, official-sample equivalence, model accuracy, or equity performance. Bias scorecard results are available only after an operator submits. No leaderboard or scorecard results are claimed.
 
 To finish the original modeling objective, obtain legitimate organizer-provided labels, run the training command in README.md, and inspect the resulting target CV. To verify exact official format, download the official sample in the operator's authenticated Zindi session and use the alignment/validation commands in SUBMISSION-KIT.md.
+## Submission 1 - 2026-10-22 (operator PW, Zindi UI)
+
+- Zindi submission ID: **HtHKqjqx**, submitter piotrszutt, ~21:40 UTC 2026-10-22.
+- **Public score (RMSE): 0.449105407**
+- File: submission/submission.csv v2 = OFFICIAL 17-column schema (9,794 rows, 5 regions), constant 0.5 in all predicted gap columns; region and *_defined flags copied from official SampleSubmission.csv.
+- Comment on Zindi: Constant 0.5 baseline, five-region official sample template, no reference reconstruction.
+- Official SampleSubmission.csv downloaded in authenticated session (919,898 B, 9,794 rows; regions: south-central-tx 6003, maricopa-az 1593, eastern-ok 1192, northern-ca 591, eastern-wa 415).
+- v1 4-region 5-column CSV kept as submission/submission-constant-4reg-v1.csv (DOES NOT match official schema).
+- Limits: 5 submissions/day, 200 total. Next: iteration 2, beat the leaderboard leader (GBM on strata features, region-aware).
