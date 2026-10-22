@@ -1,0 +1,15 @@
+# Name That LLM: competition data and heavy artifacts
+data/
+name-that-llm/outputs/
+name-that-llm/runs/
+name-that-llm/submissions/
+name-that-llm/synthetic_data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local logs
+*.log
+.ipynb_checkpoints/
