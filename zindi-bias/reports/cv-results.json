@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED_NO_ORGANIZER_LABELS",
+  "target": "coverage_gap_score",
+  "metric": "RMSE",
+  "requested_folds": 5,
+  "rmse": null,
+  "folds": [],
+  "reason": "Current public package contains no training labels; all regional sample scores are placeholders. Prohibited reference reconstruction was not performed.",
+  "next_step": "Supply legitimate organizer-provided labels, then run scripts/train_baseline.py. Synthetic software checks are logged separately."
+}
