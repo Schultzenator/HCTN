@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-10-22T18:28:08.743941+00:00",
+  "download_hashes": "PASS",
+  "downloaded_files": 12,
+  "downloaded_bytes": 24400796,
+  "public_inventory_objects": 327,
+  "submission_validation": "PASS",
+  "software_check": "PASS",
+  "official_sample_anonymous_http_status": 401,
+  "official_sample_without_auth_query_http_status": 401,
+  "connected_browser_sessions": 0,
+  "challenge_target_cv": "BLOCKED_NO_ORGANIZER_LABELS",
+  "workspace_git": "Read-only per environment permission profile; delivery preserved in local-history and bundle",
+  "push_performed": false,
+  "submission_performed": false
+}

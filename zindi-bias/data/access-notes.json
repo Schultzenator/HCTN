@@ -1,0 +1,8 @@
+{
+  "retrieved": "2026-10-22",
+  "public_listing_url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge?list-type=2",
+  "official_sample_url": "https://api.zindi.world/v1/competitions/bias-bounty-mapping-equity-challenge/files/SampleSubmission.csv?auth_token=null",
+  "official_sample_status": 401,
+  "data_dictionary": "No separately named dictionary in complete 327-object listing; README layer dictionary inspected",
+  "removed_sources": "README dated 2026-09-25 reports removal of TIGER roads, Microsoft buildings, HIFLD and CBP; not downloaded or reconstructed"
+}

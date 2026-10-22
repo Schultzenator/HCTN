@@ -1,0 +1,1310 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 34202
+  },
+  {
+    "path": "boundaries/all-aois.geojson",
+    "bytes": 5107888
+  },
+  {
+    "path": "boundaries/eastern-ok-aoi.geojson",
+    "bytes": 554630
+  },
+  {
+    "path": "boundaries/eastern-ok-tract-geoids.csv",
+    "bytes": 14310
+  },
+  {
+    "path": "boundaries/eastern-wa-aoi.geojson",
+    "bytes": 764957
+  },
+  {
+    "path": "boundaries/eastern-wa-tract-geoids.csv",
+    "bytes": 4986
+  },
+  {
+    "path": "boundaries/maricopa-az-aoi.geojson",
+    "bytes": 643735
+  },
+  {
+    "path": "boundaries/maricopa-az-tract-geoids.csv",
+    "bytes": 19122
+  },
+  {
+    "path": "boundaries/northern-ca-aoi.geojson",
+    "bytes": 1592101
+  },
+  {
+    "path": "boundaries/northern-ca-tract-geoids.csv",
+    "bytes": 7098
+  },
+  {
+    "path": "boundaries/original-rings.geojson",
+    "bytes": 2265
+  },
+  {
+    "path": "boundaries/south-central-tx-aoi.geojson",
+    "bytes": 1553119
+  },
+  {
+    "path": "boundaries/south-central-tx-tract-geoids.csv",
+    "bytes": 72126
+  },
+  {
+    "path": "bulk-downloads/README.md",
+    "bytes": 3934
+  },
+  {
+    "path": "bulk-downloads/reference.zip",
+    "bytes": 4517510250
+  },
+  {
+    "path": "bulk-downloads/strata.zip",
+    "bytes": 1694666582
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-census-acs-housing.csv",
+    "bytes": 36721
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-census-acs-housing.parquet",
+    "bytes": 3650879
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-overture-buildings.parquet",
+    "bytes": 298882068
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-overture-infrastructure.parquet",
+    "bytes": 290394
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-overture-pois.parquet",
+    "bytes": 28848614
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-overture-rail.parquet",
+    "bytes": 1989707
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-overture-roads-unfiltered.parquet",
+    "bytes": 192989343
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-overture-roads.parquet",
+    "bytes": 82239229
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-sample-submission.csv",
+    "bytes": 33436
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-census-acs-housing.csv",
+    "bytes": 12847
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-census-acs-housing.parquet",
+    "bytes": 2532145
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-overture-buildings.parquet",
+    "bytes": 125351011
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-overture-infrastructure.parquet",
+    "bytes": 345091
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-overture-pois.parquet",
+    "bytes": 10761396
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-overture-rail.parquet",
+    "bytes": 1399171
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-overture-roads-unfiltered.parquet",
+    "bytes": 116325606
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-overture-roads.parquet",
+    "bytes": 31401139
+  },
+  {
+    "path": "reference/eastern-wa/eastern-wa-sample-submission.csv",
+    "bytes": 11680
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-census-acs-housing.csv",
+    "bytes": 49173
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-census-acs-housing.parquet",
+    "bytes": 3457173
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-overture-buildings.parquet",
+    "bytes": 324720762
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-overture-infrastructure.parquet",
+    "bytes": 918681
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-overture-pois.parquet",
+    "bytes": 40987154
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-overture-rail.parquet",
+    "bytes": 1657987
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-overture-roads-unfiltered.parquet",
+    "bytes": 262146919
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-overture-roads.parquet",
+    "bytes": 80052206
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-sample-submission.csv",
+    "bytes": 44664
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-census-acs-housing.csv",
+    "bytes": 18295
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-census-acs-housing.parquet",
+    "bytes": 3037540
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-overture-buildings.parquet",
+    "bytes": 130554079
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-overture-infrastructure.parquet",
+    "bytes": 309977
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-overture-pois.parquet",
+    "bytes": 16168720
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-overture-rail.parquet",
+    "bytes": 1068289
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-overture-roads-unfiltered.parquet",
+    "bytes": 157211249
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-overture-roads.parquet",
+    "bytes": 43515963
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-sample-submission.csv",
+    "bytes": 16608
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-census-acs-housing.csv",
+    "bytes": 185447
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-census-acs-housing.parquet",
+    "bytes": 13758433
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-overture-buildings.parquet",
+    "bytes": 1269949045
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-overture-infrastructure.parquet",
+    "bytes": 1394119
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-overture-pois.parquet",
+    "bytes": 179937096
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-overture-rail.parquet",
+    "bytes": 5970991
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-overture-roads-unfiltered.parquet",
+    "bytes": 783316505
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-overture-roads.parquet",
+    "bytes": 299751270
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-sample-submission.csv",
+    "bytes": 168144
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-carbonplan-tract-table.csv",
+    "bytes": 419597
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-carbonplan-tract-table.parquet",
+    "bytes": 204299
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-cdc-wonder-tract-table.csv",
+    "bytes": 916050
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-cdc-wonder-tract-table.parquet",
+    "bytes": 115515
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-census-aiannh.parquet",
+    "bytes": 1048376
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-census-tracts.parquet",
+    "bytes": 5324978
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-census-tribal-subdivisions.parquet",
+    "bytes": 1663805
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-census-tribal-tracts.parquet",
+    "bytes": 141519
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-cvi-tract-table.csv",
+    "bytes": 274178
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-cvi-tract-table.parquet",
+    "bytes": 122702
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-drought-gov-tract-table.csv",
+    "bytes": 3332370
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-drought-gov-tract-table.parquet",
+    "bytes": 1333483
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-epht-heat-tract-table.csv",
+    "bytes": 306832
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-epht-heat-tract-table.parquet",
+    "bytes": 52842
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-fpa-fod-tract-table.csv",
+    "bytes": 173391
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-fpa-fod-tract-table.parquet",
+    "bytes": 64237
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-mtbs-tract-table.csv",
+    "bytes": 245331
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-mtbs-tract-table.parquet",
+    "bytes": 56391
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-nasa-heat-tract-table.csv",
+    "bytes": 1742740
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-nasa-heat-tract-table.parquet",
+    "bytes": 717553
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-nchs-tract-table.csv",
+    "bytes": 66292
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-nchs-tract-table.parquet",
+    "bytes": 13844
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-nifc-tract-table.csv",
+    "bytes": 246823
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-nifc-tract-table.parquet",
+    "bytes": 46360
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-noaa-ghcn-stations.csv",
+    "bytes": 150762
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-noaa-ghcn-stations.parquet",
+    "bytes": 81140
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-noaa-ghcn-tract-table.csv",
+    "bytes": 187056
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-noaa-ghcn-tract-table.parquet",
+    "bytes": 77481
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-ruca-tract-table.csv",
+    "bytes": 83793
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-ruca-tract-table.parquet",
+    "bytes": 31882
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-rucc-tract-table.csv",
+    "bytes": 127112
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-rucc-tract-table.parquet",
+    "bytes": 13569
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-strata-tract-table.csv",
+    "bytes": 2862327
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-strata-tract-table.parquet",
+    "bytes": 638464
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-svi-tract-table.csv",
+    "bytes": 82562
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-svi-tract-table.parquet",
+    "bytes": 59784
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-tribal-tract-table.csv",
+    "bytes": 140897
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-tribal-tract-table.parquet",
+    "bytes": 26055
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-usdm-drought-tract-table.csv",
+    "bytes": 685271
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-usdm-drought-tract-table.parquet",
+    "bytes": 286038
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-usfs-wildfire-tract-table.csv",
+    "bytes": 1846269
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-usfs-wildfire-tract-table.parquet",
+    "bytes": 876740
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-usgs-combined-tract-table.csv",
+    "bytes": 242111
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-usgs-combined-tract-table.parquet",
+    "bytes": 72750
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-carbonplan-tract-table.csv",
+    "bytes": 147046
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-carbonplan-tract-table.parquet",
+    "bytes": 83541
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-cdc-wonder-tract-table.csv",
+    "bytes": 319731
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-cdc-wonder-tract-table.parquet",
+    "bytes": 95499
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-census-aiannh.parquet",
+    "bytes": 227719
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-census-tracts.parquet",
+    "bytes": 3872070
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-census-tribal-tracts.parquet",
+    "bytes": 310864
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-cvi-tract-table.csv",
+    "bytes": 96559
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-cvi-tract-table.parquet",
+    "bytes": 49063
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-drought-gov-tract-table.csv",
+    "bytes": 1234965
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-drought-gov-tract-table.parquet",
+    "bytes": 551704
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-epht-heat-tract-table.csv",
+    "bytes": 107476
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-epht-heat-tract-table.parquet",
+    "bytes": 36937
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-fpa-fod-tract-table.csv",
+    "bytes": 71319
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-fpa-fod-tract-table.parquet",
+    "bytes": 47112
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-mtbs-tract-table.csv",
+    "bytes": 96738
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-mtbs-tract-table.parquet",
+    "bytes": 44711
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-nasa-heat-tract-table.csv",
+    "bytes": 332256
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-nasa-heat-tract-table.parquet",
+    "bytes": 161122
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-nchs-tract-table.csv",
+    "bytes": 22324
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-nchs-tract-table.parquet",
+    "bytes": 8081
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-nifc-tract-table.csv",
+    "bytes": 112568
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-nifc-tract-table.parquet",
+    "bytes": 49860
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-noaa-ghcn-stations.csv",
+    "bytes": 113161
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-noaa-ghcn-stations.parquet",
+    "bytes": 62429
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-noaa-ghcn-tract-table.csv",
+    "bytes": 65052
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-noaa-ghcn-tract-table.parquet",
+    "bytes": 38019
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-ruca-tract-table.csv",
+    "bytes": 29072
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-ruca-tract-table.parquet",
+    "bytes": 15695
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-rucc-tract-table.csv",
+    "bytes": 45034
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-rucc-tract-table.parquet",
+    "bytes": 8110
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-strata-tract-table.csv",
+    "bytes": 1008248
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-strata-tract-table.parquet",
+    "bytes": 266685
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-svi-tract-table.csv",
+    "bytes": 28878
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-svi-tract-table.parquet",
+    "bytes": 27016
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-tribal-tract-table.csv",
+    "bytes": 34216
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-tribal-tract-table.parquet",
+    "bytes": 15822
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-usdm-drought-tract-table.csv",
+    "bytes": 255955
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-usdm-drought-tract-table.parquet",
+    "bytes": 116518
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-usfs-wildfire-tract-table.csv",
+    "bytes": 648342
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-usfs-wildfire-tract-table.parquet",
+    "bytes": 346144
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-usgs-combined-tract-table.csv",
+    "bytes": 102364
+  },
+  {
+    "path": "strata/eastern-wa/eastern-wa-usgs-combined-tract-table.parquet",
+    "bytes": 51470
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-carbonplan-tract-table.csv",
+    "bytes": 546497
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-carbonplan-tract-table.parquet",
+    "bytes": 243722
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-cdc-wonder-tract-table.csv",
+    "bytes": 1240965
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-cdc-wonder-tract-table.parquet",
+    "bytes": 98983
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-census-aiannh.parquet",
+    "bytes": 1578879
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-census-tracts.parquet",
+    "bytes": 5242171
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-census-tribal-subdivisions.parquet",
+    "bytes": 537111
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-census-tribal-tracts.parquet",
+    "bytes": 700318
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-cvi-tract-table.csv",
+    "bytes": 366369
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-cvi-tract-table.parquet",
+    "bytes": 162658
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-drought-gov-tract-table.csv",
+    "bytes": 4719203
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-drought-gov-tract-table.parquet",
+    "bytes": 1649475
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-epht-heat-tract-table.csv",
+    "bytes": 418544
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-epht-heat-tract-table.parquet",
+    "bytes": 57047
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-fpa-fod-tract-table.csv",
+    "bytes": 310517
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-fpa-fod-tract-table.parquet",
+    "bytes": 99981
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-mtbs-tract-table.csv",
+    "bytes": 314255
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-mtbs-tract-table.parquet",
+    "bytes": 56784
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-nasa-heat-tract-table.csv",
+    "bytes": 2386368
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-nasa-heat-tract-table.parquet",
+    "bytes": 869513
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-nchs-tract-table.csv",
+    "bytes": 93541
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-nchs-tract-table.parquet",
+    "bytes": 15351
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-nifc-tract-table.csv",
+    "bytes": 333832
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-nifc-tract-table.parquet",
+    "bytes": 56763
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-noaa-ghcn-stations.csv",
+    "bytes": 222053
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-noaa-ghcn-stations.parquet",
+    "bytes": 107733
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-noaa-ghcn-tract-table.csv",
+    "bytes": 256372
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-noaa-ghcn-tract-table.parquet",
+    "bytes": 101267
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-ruca-tract-table.csv",
+    "bytes": 111581
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-ruca-tract-table.parquet",
+    "bytes": 38382
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-rucc-tract-table.csv",
+    "bytes": 163965
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-rucc-tract-table.parquet",
+    "bytes": 15448
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-strata-tract-table.csv",
+    "bytes": 3949344
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-strata-tract-table.parquet",
+    "bytes": 793492
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-svi-tract-table.csv",
+    "bytes": 109900
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-svi-tract-table.parquet",
+    "bytes": 73927
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-tribal-tract-table.csv",
+    "bytes": 124649
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-tribal-tract-table.parquet",
+    "bytes": 24968
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-usdm-drought-tract-table.csv",
+    "bytes": 957706
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-usdm-drought-tract-table.parquet",
+    "bytes": 297239
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-usfs-wildfire-tract-table.csv",
+    "bytes": 2437151
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-usfs-wildfire-tract-table.parquet",
+    "bytes": 1129520
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-usgs-combined-tract-table.csv",
+    "bytes": 299410
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-usgs-combined-tract-table.parquet",
+    "bytes": 74475
+  },
+  {
+    "path": "strata/national/national-carbonplan-tract-table.csv",
+    "bytes": 28472257
+  },
+  {
+    "path": "strata/national/national-carbonplan-tract-table.parquet",
+    "bytes": 11576438
+  },
+  {
+    "path": "strata/national/national-cdc-wonder-heat-mortality.csv",
+    "bytes": 20151
+  },
+  {
+    "path": "strata/national/national-cdc-wonder-heat-mortality.parquet",
+    "bytes": 9720
+  },
+  {
+    "path": "strata/national/national-cdc-wonder-tract-table.csv",
+    "bytes": 63856181
+  },
+  {
+    "path": "strata/national/national-cdc-wonder-tract-table.parquet",
+    "bytes": 1654716
+  },
+  {
+    "path": "strata/national/national-census-aiannh.parquet",
+    "bytes": 10160377
+  },
+  {
+    "path": "strata/national/national-census-tract-table.csv",
+    "bytes": 11699015
+  },
+  {
+    "path": "strata/national/national-census-tract-table.parquet",
+    "bytes": 4486576
+  },
+  {
+    "path": "strata/national/national-census-tracts.parquet",
+    "bytes": 224006890
+  },
+  {
+    "path": "strata/national/national-census-tribal-subdivisions.parquet",
+    "bytes": 5392239
+  },
+  {
+    "path": "strata/national/national-census-tribal-tracts.parquet",
+    "bytes": 7693095
+  },
+  {
+    "path": "strata/national/national-cvi-tract-table.csv",
+    "bytes": 19390195
+  },
+  {
+    "path": "strata/national/national-cvi-tract-table.parquet",
+    "bytes": 8386883
+  },
+  {
+    "path": "strata/national/national-drought-gov-tract-table.csv",
+    "bytes": 239488513
+  },
+  {
+    "path": "strata/national/national-drought-gov-tract-table.parquet",
+    "bytes": 88570841
+  },
+  {
+    "path": "strata/national/national-epht-heat-tract-table.csv",
+    "bytes": 21610967
+  },
+  {
+    "path": "strata/national/national-epht-heat-tract-table.parquet",
+    "bytes": 1742242
+  },
+  {
+    "path": "strata/national/national-fpa-fod-tract-table.csv",
+    "bytes": 13267598
+  },
+  {
+    "path": "strata/national/national-fpa-fod-tract-table.parquet",
+    "bytes": 2682007
+  },
+  {
+    "path": "strata/national/national-mtbs-tract-table.csv",
+    "bytes": 16092621
+  },
+  {
+    "path": "strata/national/national-mtbs-tract-table.parquet",
+    "bytes": 1136180
+  },
+  {
+    "path": "strata/national/national-nasa-heat-tract-table.csv",
+    "bytes": 96415171
+  },
+  {
+    "path": "strata/national/national-nasa-heat-tract-table.parquet",
+    "bytes": 25137063
+  },
+  {
+    "path": "strata/national/national-nchs-tract-table.csv",
+    "bytes": 4848123
+  },
+  {
+    "path": "strata/national/national-nchs-tract-table.parquet",
+    "bytes": 609911
+  },
+  {
+    "path": "strata/national/national-nifc-tract-table.csv",
+    "bytes": 17366401
+  },
+  {
+    "path": "strata/national/national-nifc-tract-table.parquet",
+    "bytes": 1401245
+  },
+  {
+    "path": "strata/national/national-noaa-ghcn-stations.csv",
+    "bytes": 11000958
+  },
+  {
+    "path": "strata/national/national-noaa-ghcn-stations.parquet",
+    "bytes": 4767595
+  },
+  {
+    "path": "strata/national/national-noaa-ghcn-tract-table.csv",
+    "bytes": 13484685
+  },
+  {
+    "path": "strata/national/national-noaa-ghcn-tract-table.parquet",
+    "bytes": 4601077
+  },
+  {
+    "path": "strata/national/national-ruca-tract-table.csv",
+    "bytes": 5974169
+  },
+  {
+    "path": "strata/national/national-ruca-tract-table.parquet",
+    "bytes": 1339249
+  },
+  {
+    "path": "strata/national/national-rucc-tract-table.csv",
+    "bytes": 9006195
+  },
+  {
+    "path": "strata/national/national-rucc-tract-table.parquet",
+    "bytes": 587477
+  },
+  {
+    "path": "strata/national/national-strata-tract-table.csv",
+    "bytes": 202613591
+  },
+  {
+    "path": "strata/national/national-strata-tract-table.parquet",
+    "bytes": 38063116
+  },
+  {
+    "path": "strata/national/national-svi-tract-table.csv",
+    "bytes": 5893633
+  },
+  {
+    "path": "strata/national/national-svi-tract-table.parquet",
+    "bytes": 1651518
+  },
+  {
+    "path": "strata/national/national-tribal-tract-table.csv",
+    "bytes": 6608633
+  },
+  {
+    "path": "strata/national/national-tribal-tract-table.parquet",
+    "bytes": 647329
+  },
+  {
+    "path": "strata/national/national-usdm-drought-tract-table.csv",
+    "bytes": 44502018
+  },
+  {
+    "path": "strata/national/national-usdm-drought-tract-table.parquet",
+    "bytes": 14435299
+  },
+  {
+    "path": "strata/national/national-usfs-wildfire-tract-table.csv",
+    "bytes": 127569854
+  },
+  {
+    "path": "strata/national/national-usfs-wildfire-tract-table.parquet",
+    "bytes": 57357456
+  },
+  {
+    "path": "strata/national/national-usgs-combined-tract-table.csv",
+    "bytes": 15253724
+  },
+  {
+    "path": "strata/national/national-usgs-combined-tract-table.parquet",
+    "bytes": 2353875
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-carbonplan-tract-table.csv",
+    "bytes": 208418
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-carbonplan-tract-table.parquet",
+    "bytes": 109585
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-cdc-wonder-tract-table.csv",
+    "bytes": 456020
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-cdc-wonder-tract-table.parquet",
+    "bytes": 95858
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-census-aiannh.parquet",
+    "bytes": 100413
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-census-tracts.parquet",
+    "bytes": 4762054
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-census-tribal-subdivisions.parquet",
+    "bytes": 20847
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-census-tribal-tracts.parquet",
+    "bytes": 96482
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-cvi-tract-table.csv",
+    "bytes": 136420
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-cvi-tract-table.parquet",
+    "bytes": 67138
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-drought-gov-tract-table.csv",
+    "bytes": 1760396
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-drought-gov-tract-table.parquet",
+    "bytes": 718685
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-epht-heat-tract-table.csv",
+    "bytes": 154206
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-epht-heat-tract-table.parquet",
+    "bytes": 40991
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-fpa-fod-tract-table.csv",
+    "bytes": 116203
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-fpa-fod-tract-table.parquet",
+    "bytes": 63599
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-mtbs-tract-table.csv",
+    "bytes": 128289
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-mtbs-tract-table.parquet",
+    "bytes": 45755
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-nasa-heat-tract-table.csv",
+    "bytes": 677345
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-nasa-heat-tract-table.parquet",
+    "bytes": 274678
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-nchs-tract-table.csv",
+    "bytes": 33821
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-nchs-tract-table.parquet",
+    "bytes": 9140
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-nifc-tract-table.csv",
+    "bytes": 152940
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-nifc-tract-table.parquet",
+    "bytes": 56037
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-noaa-ghcn-stations.csv",
+    "bytes": 115083
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-noaa-ghcn-stations.parquet",
+    "bytes": 63167
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-noaa-ghcn-tract-table.csv",
+    "bytes": 93314
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-noaa-ghcn-tract-table.parquet",
+    "bytes": 46350
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-ruca-tract-table.csv",
+    "bytes": 41330
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-ruca-tract-table.parquet",
+    "bytes": 19102
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-rucc-tract-table.csv",
+    "bytes": 62292
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-rucc-tract-table.parquet",
+    "bytes": 9223
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-strata-tract-table.csv",
+    "bytes": 1471003
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-strata-tract-table.parquet",
+    "bytes": 354711
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-svi-tract-table.csv",
+    "bytes": 41175
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-svi-tract-table.parquet",
+    "bytes": 35273
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-tribal-tract-table.csv",
+    "bytes": 49099
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-tribal-tract-table.parquet",
+    "bytes": 18656
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-usdm-drought-tract-table.csv",
+    "bytes": 332783
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-usdm-drought-tract-table.parquet",
+    "bytes": 119200
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-usfs-wildfire-tract-table.csv",
+    "bytes": 910504
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-usfs-wildfire-tract-table.parquet",
+    "bytes": 463026
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-usgs-combined-tract-table.csv",
+    "bytes": 144455
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-usgs-combined-tract-table.parquet",
+    "bytes": 61861
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-carbonplan-tract-table.csv",
+    "bytes": 2061230
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-carbonplan-tract-table.parquet",
+    "bytes": 878937
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-cdc-wonder-tract-table.csv",
+    "bytes": 4515957
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-cdc-wonder-tract-table.parquet",
+    "bytes": 185616
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-census-aiannh.parquet",
+    "bytes": 7363
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-census-tracts.parquet",
+    "bytes": 20580821
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-census-tribal-tracts.parquet",
+    "bytes": 6340
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-cvi-tract-table.csv",
+    "bytes": 1373150
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-cvi-tract-table.parquet",
+    "bytes": 540901
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-drought-gov-tract-table.csv",
+    "bytes": 17345449
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-drought-gov-tract-table.parquet",
+    "bytes": 6329269
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-epht-heat-tract-table.csv",
+    "bytes": 1548792
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-epht-heat-tract-table.parquet",
+    "bytes": 147868
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-fpa-fod-tract-table.csv",
+    "bytes": 928625
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-fpa-fod-tract-table.parquet",
+    "bytes": 225946
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-mtbs-tract-table.csv",
+    "bytes": 1116539
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-mtbs-tract-table.parquet",
+    "bytes": 90143
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-nasa-heat-tract-table.csv",
+    "bytes": 8992500
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-nasa-heat-tract-table.parquet",
+    "bytes": 3097557
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-nchs-tract-table.csv",
+    "bytes": 351210
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-nchs-tract-table.parquet",
+    "bytes": 46187
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-nifc-tract-table.csv",
+    "bytes": 1226204
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-nifc-tract-table.parquet",
+    "bytes": 119665
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-noaa-ghcn-stations.csv",
+    "bytes": 792422
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-noaa-ghcn-stations.parquet",
+    "bytes": 326084
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-noaa-ghcn-tract-table.csv",
+    "bytes": 953793
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-noaa-ghcn-tract-table.parquet",
+    "bytes": 329486
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-ruca-tract-table.csv",
+    "bytes": 419822
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-ruca-tract-table.parquet",
+    "bytes": 121764
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-rucc-tract-table.csv",
+    "bytes": 626818
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-rucc-tract-table.parquet",
+    "bytes": 45475
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-strata-tract-table.csv",
+    "bytes": 14345655
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-strata-tract-table.parquet",
+    "bytes": 2800838
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-svi-tract-table.csv",
+    "bytes": 415729
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-svi-tract-table.parquet",
+    "bytes": 213307
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-tribal-tract-table.csv",
+    "bytes": 451223
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-tribal-tract-table.parquet",
+    "bytes": 49681
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-usdm-drought-tract-table.csv",
+    "bytes": 3554838
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-usdm-drought-tract-table.parquet",
+    "bytes": 1303466
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-usfs-wildfire-tract-table.csv",
+    "bytes": 9176490
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-usfs-wildfire-tract-table.parquet",
+    "bytes": 4164233
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-usgs-combined-tract-table.csv",
+    "bytes": 1042719
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-usgs-combined-tract-table.parquet",
+    "bytes": 163519
+  }
+]
