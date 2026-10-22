@@ -1,0 +1,30 @@
+{
+  // "exclude" lists an orphaned legacy generation of modules (src/core/*,
+  // src/emma/api.ts, src/emma/fixtures.ts, src/mcp/tools.ts, src/mcp/jsonrpc.ts)
+  // that nothing in the wired tree imports and that were written against an
+  // earlier type layer. Safe to delete them entirely - see WORK-STATE.md.
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/core",
+    "src/emma/api.ts",
+    "src/emma/fixtures.ts",
+    "src/mcp/tools.ts",
+    "src/mcp/jsonrpc.ts"
+  ]
+}
