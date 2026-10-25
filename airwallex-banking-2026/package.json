@@ -1,0 +1,29 @@
+{
+  "name": "intentpay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "demo": "npm run build && node dist/src/demo.js",
+    "start": "npm run build && node dist/src/server.js",
+    "audit": "npm run build --silent && node dist/src/cli.js",
+    "intent": "npm run build --silent && node dist/src/intent-cli.js",
+    "mock": "npm run build --silent && node dist/src/mock-cli.js",
+    "purchase": "npm run build --silent && node dist/src/purchase-cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^22.19.0"
+  }
+}
