@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+data/**/*.parquet
+data/discovery-*.txt
+data/*.html
+models/
+data/zindi-*-text.txt
+data/zindi-sample-response.txt
+local-history/
+local-commit.bundle

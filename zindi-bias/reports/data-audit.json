@@ -1,0 +1,101 @@
+{
+  "regions": [
+    {
+      "region": "northern-ca",
+      "rows": 591,
+      "columns": 227,
+      "bytes": 354711,
+      "null_cells": 7728,
+      "sample_all_zero_scores": true,
+      "scored_rows": 591,
+      "excluded_feature_geoids": []
+    },
+    {
+      "region": "eastern-ok",
+      "rows": 1192,
+      "columns": 227,
+      "bytes": 638464,
+      "null_cells": 18964,
+      "sample_all_zero_scores": true,
+      "scored_rows": 1192,
+      "excluded_feature_geoids": []
+    },
+    {
+      "region": "maricopa-az",
+      "rows": 1593,
+      "columns": 227,
+      "bytes": 793492,
+      "null_cells": 22258,
+      "sample_all_zero_scores": true,
+      "scored_rows": 1593,
+      "excluded_feature_geoids": []
+    },
+    {
+      "region": "south-central-tx",
+      "rows": 6010,
+      "columns": 227,
+      "bytes": 2800838,
+      "null_cells": 98561,
+      "sample_all_zero_scores": true,
+      "scored_rows": 6003,
+      "excluded_feature_geoids": [
+        "48007990000",
+        "48061990000",
+        "48261990000",
+        "48273990000",
+        "48321990000",
+        "48355990000",
+        "48489990000"
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "path": "strata/northern-ca/northern-ca-strata-tract-table.parquet",
+      "rows": 591,
+      "columns": 227,
+      "bytes": 354711
+    },
+    {
+      "path": "strata/eastern-ok/eastern-ok-strata-tract-table.parquet",
+      "rows": 1192,
+      "columns": 227,
+      "bytes": 638464
+    },
+    {
+      "path": "strata/maricopa-az/maricopa-az-strata-tract-table.parquet",
+      "rows": 1593,
+      "columns": 227,
+      "bytes": 793492
+    },
+    {
+      "path": "strata/south-central-tx/south-central-tx-strata-tract-table.parquet",
+      "rows": 6010,
+      "columns": 227,
+      "bytes": 2800838
+    },
+    {
+      "path": "reference/northern-ca/northern-ca-census-acs-housing.parquet",
+      "rows": 591,
+      "columns": 7,
+      "bytes": 3037540
+    },
+    {
+      "path": "reference/northern-ca/northern-ca-overture-infrastructure.parquet",
+      "rows": 3318,
+      "columns": 15,
+      "bytes": 309977
+    },
+    {
+      "path": "reference/northern-ca/northern-ca-overture-pois.parquet",
+      "rows": 116897,
+      "columns": 19,
+      "bytes": 16168720
+    }
+  ],
+  "downloaded_bytes": 24400796,
+  "inventory_objects": 327,
+  "label_candidates": [],
+  "target_cv_status": "BLOCKED_NO_ORGANIZER_LABELS",
+  "rmse": null
+}

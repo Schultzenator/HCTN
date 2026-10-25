@@ -1,0 +1,74 @@
+[
+  {
+    "path": "README.md",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/README.md",
+    "bytes": 34202,
+    "sha256": "8016f18a9a6297e398e7eebdd7bd0760f138bfa1b485f7ed2961f6ba1d88f136"
+  },
+  {
+    "path": "strata/northern-ca/northern-ca-strata-tract-table.parquet",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/strata/northern-ca/northern-ca-strata-tract-table.parquet",
+    "bytes": 354711,
+    "sha256": "7fc19dce5ca76ee94eb2006d9bd51bed71d5bfbcdf3ef756605e0998df940243"
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-sample-submission.csv",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/reference/northern-ca/northern-ca-sample-submission.csv",
+    "bytes": 16608,
+    "sha256": "f38017b5284667b80b451685fd146388c108e1b30308301289c7a96ecfe60902"
+  },
+  {
+    "path": "strata/eastern-ok/eastern-ok-strata-tract-table.parquet",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/strata/eastern-ok/eastern-ok-strata-tract-table.parquet",
+    "bytes": 638464,
+    "sha256": "e82862b9d9db436410ad47df466e133df94df6328f6a138d5bd871b491ba0d54"
+  },
+  {
+    "path": "reference/eastern-ok/eastern-ok-sample-submission.csv",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/reference/eastern-ok/eastern-ok-sample-submission.csv",
+    "bytes": 33436,
+    "sha256": "56cb40fba4008d646bc63c62c91e211871459224b3de8b3a886ff813803fd0d4"
+  },
+  {
+    "path": "strata/maricopa-az/maricopa-az-strata-tract-table.parquet",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/strata/maricopa-az/maricopa-az-strata-tract-table.parquet",
+    "bytes": 793492,
+    "sha256": "f19ec2f5afd400827b2420a81916bdec95b08772badd85fdb250149c334a5fcd"
+  },
+  {
+    "path": "reference/maricopa-az/maricopa-az-sample-submission.csv",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/reference/maricopa-az/maricopa-az-sample-submission.csv",
+    "bytes": 44664,
+    "sha256": "1640b801d56ab308e68c65583b88cfb9e1555b05a6d0b922eaba22ac09960a31"
+  },
+  {
+    "path": "strata/south-central-tx/south-central-tx-strata-tract-table.parquet",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/strata/south-central-tx/south-central-tx-strata-tract-table.parquet",
+    "bytes": 2800838,
+    "sha256": "55589565024414f244ccbcadcc45a90860a3840ec9d8a4bdfa8a126c2128a354"
+  },
+  {
+    "path": "reference/south-central-tx/south-central-tx-sample-submission.csv",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/reference/south-central-tx/south-central-tx-sample-submission.csv",
+    "bytes": 168144,
+    "sha256": "afa59c0eb30c40be25ce82098f144447591b79cb9692e669b2f2fe7b7b1ee58e"
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-census-acs-housing.parquet",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/reference/northern-ca/northern-ca-census-acs-housing.parquet",
+    "bytes": 3037540,
+    "sha256": "39720c19a40df65843ff2f8da2f543af80abf0bf097f89cadce68d4b015cccca"
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-overture-infrastructure.parquet",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/reference/northern-ca/northern-ca-overture-infrastructure.parquet",
+    "bytes": 309977,
+    "sha256": "ce67b48cda01d3af0f05e656d13f6d6354340d3c3d6bc0f4c741a46329e28ef0"
+  },
+  {
+    "path": "reference/northern-ca/northern-ca-overture-pois.parquet",
+    "url": "https://data.source.coop/humane-intelligence/bias-bounty-mapping-equity-challenge/reference/northern-ca/northern-ca-overture-pois.parquet",
+    "bytes": 16168720,
+    "sha256": "6318deb41156116c002f2bf0222e37b0ba758c1707fbf573da13afd32a482d6a"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "fleetpilot",
+  "version": "0.1.0",
+  "description": "FleetPilot - agentic multi-cloud GPU fleet operations over the emma API: deploy, cost-optimize and tear down GPU workloads through an MCP server, CLI and deterministic planner (emma hackathon 2026, Showcases track)",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "fleetpilot": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build --silent && node --test dist/test/*.test.js",
+    "demo": "npm run build --silent && node dist/cli.js",
+    "live": "npm run build --silent && node dist/cli.js --live",
+    "mcp": "npm run build --silent && node dist/cli.js --mcp"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

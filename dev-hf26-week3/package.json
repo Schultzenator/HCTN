@@ -1,0 +1,15 @@
+{
+  "name": "tortoise",
+  "version": "0.1.0",
+  "description": "A deliberately slow daily planner: one anchor task a day, chosen by open-weight Gemma, constrained by deterministic guardrails",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "test": "node --experimental-strip-types test/run-tests.ts",
+    "typecheck": "tsc --noEmit",
+    "demo": "node --experimental-strip-types src/cli.ts plan examples/backlog.md --provider mock --budget 120"
+  },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.7.0" }
+}

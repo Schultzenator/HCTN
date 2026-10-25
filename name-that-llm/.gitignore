@@ -1,0 +1,10 @@
+data/
+outputs/
+runs/
+submissions/
+synthetic_data/
+.venv/
+__pycache__/
+*.pyc
+*.log
+.ipynb_checkpoints/
