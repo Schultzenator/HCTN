@@ -1,0 +1,41 @@
+
+> twitchcon-chat-relay-studio@0.1.0 smoke
+> npm run build && node dist/test/fixtureSmoke.js
+
+
+> twitchcon-chat-relay-studio@0.1.0 build
+> tsc
+
+PASS: compiled CLI --fixture from another cwd; default timeout; 12 votes / 1 duplicate.
+PASS: three templates; undo restores harbor; replay shows forest without mutating canonical history; SSE reconnect snapshot; overlay HTTP 200.
+{
+  "counts": {
+    "explore": 7,
+    "help": 3,
+    "build": 2
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "template": "forest",
+      "seed": 431368734
+    },
+    {
+      "id": 2,
+      "template": "harbor",
+      "seed": 3917235130
+    },
+    {
+      "id": 3,
+      "template": "citadel",
+      "seed": 3444595798
+    }
+  ],
+  "finalCanonical": "harbor",
+  "finalPlayback": "forest",
+  "stats": {
+    "accepted": 45,
+    "duplicates": 3,
+    "invalid": 0
+  }
+}

@@ -1,0 +1,16 @@
+{"delayMs": 2000, "event": {"id": "01", "userId": "u1", "displayName": "MossPilot", "text": "!vote explore", "timestamp": 1792936800000}}
+{"delayMs": 700, "event": {"id": "02", "userId": "u2", "displayName": "CloudCartographer", "text": "!vote help", "timestamp": 1792936800700}}
+{"delayMs": 700, "event": {"id": "03", "userId": "u3", "displayName": "Gearling", "text": "!vote build", "timestamp": 1792936801400}}
+{"delayMs": 700, "event": {"id": "04", "userId": "u4", "displayName": "LanternFox", "text": "!vote explore", "timestamp": 1792936802100}}
+{"delayMs": 100, "event": {"id": "04", "userId": "u4", "displayName": "LanternFox", "text": "!vote explore", "timestamp": 1792936802800}}
+{"delayMs": 100, "event": {"id": "05", "userId": "u1", "displayName": "MossPilot", "text": "!vote build", "timestamp": 1792936803500}}
+{"delayMs": 700, "event": {"id": "06", "userId": "u5", "displayName": "SilverFern", "text": "!vote explore", "timestamp": 1792936804200}}
+{"delayMs": 700, "event": {"id": "07", "userId": "u6", "displayName": "BrassBadger", "text": "!vote help", "timestamp": 1792936804900}}
+{"delayMs": 700, "event": {"id": "08", "userId": "u7", "displayName": "StarSailor", "text": "!vote explore", "timestamp": 1792936805600}}
+{"delayMs": 700, "event": {"id": "09", "userId": "u8", "displayName": "TinyComet", "text": "!vote build", "timestamp": 1792936806300}}
+{"delayMs": 700, "event": {"id": "10", "userId": "u9", "displayName": "MoonMoth", "text": "!vote explore", "timestamp": 1792936807000}}
+{"delayMs": 700, "event": {"id": "11", "userId": "u10", "displayName": "Kindling", "text": "!vote help", "timestamp": 1792936807700}}
+{"delayMs": 700, "event": {"id": "12", "userId": "u11", "displayName": "EchoBloom", "text": "!vote explore", "timestamp": 1792936808400}}
+{"delayMs": 700, "event": {"id": "13", "userId": "u12", "displayName": "Driftwood", "text": "!vote explore", "timestamp": 1792936809100}}
+{"delayMs": 700, "event": {"id": "14", "userId": "u13", "displayName": "RiverRune", "text": "!vote dance", "timestamp": 1792936809800}}
+{"delayMs": 700, "event": {"id": "15", "userId": "u14", "displayName": "SafetySprite", "text": "$(touch /tmp/never-execute)", "timestamp": 1792936810500}}
