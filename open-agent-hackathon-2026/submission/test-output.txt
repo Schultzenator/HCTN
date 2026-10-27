@@ -1,0 +1,138 @@
+
+> opportunity-radar@0.1.0 test
+> npm run build && node --test dist/test/*.test.js
+
+
+> opportunity-radar@0.1.0 build
+> tsc
+
+TAP version 13
+# Subtest: canonical URLs remove tracking, fragment and trailing slash but preserve identity queries
+ok 1 - canonical URLs remove tracking, fragment and trailing slash but preserve identity queries
+  ---
+  duration_ms: 4.203757
+  type: 'test'
+  ...
+# Subtest: reject unsafe, malformed and credential-bearing evidence URLs
+ok 2 - reject unsafe, malformed and credential-bearing evidence URLs
+  ---
+  duration_ms: 0.404537
+  type: 'test'
+  ...
+# Subtest: dedup merges canonical evidence and preserves independent source attributions
+ok 3 - dedup merges canonical evidence and preserves independent source attributions
+  ---
+  duration_ms: 10.022794
+  type: 'test'
+  ...
+# Subtest: dedup joins transitive bridge records independent of order
+ok 4 - dedup joins transitive bridge records independent of order
+  ---
+  duration_ms: 1.196516
+  type: 'test'
+  ...
+# Subtest: same titles alone do not merge distinct opportunities
+ok 5 - same titles alone do not merge distinct opportunities
+  ---
+  duration_ms: 0.34911
+  type: 'test'
+  ...
+# Subtest: federates all fixture source types and deduplicates eight to six records
+ok 6 - federates all fixture source types and deduplicates eight to six records
+  ---
+  duration_ms: 12.437107
+  type: 'test'
+  ...
+# Subtest: source failures preserve results from healthy providers and disclose failure
+ok 7 - source failures preserve results from healthy providers and disclose failure
+  ---
+  duration_ms: 0.948721
+  type: 'test'
+  ...
+# Subtest: evidence filter runs before model and strips invalid links
+ok 8 - evidence filter runs before model and strips invalid links
+  ---
+  duration_ms: 0.82329
+  type: 'test'
+  ...
+# Subtest: empty eligible set does not call model
+ok 9 - empty eligible set does not call model
+  ---
+  duration_ms: 0.535157
+  type: 'test'
+  ...
+# Subtest: mock LLM is deterministic and rewards matching profile tags
+ok 10 - mock LLM is deterministic and rewards matching profile tags
+  ---
+  duration_ms: 1.975692
+  type: 'test'
+  ...
+# Subtest: ranking sorts descending with stable ID tie break
+ok 11 - ranking sorts descending with stable ID tie break
+  ---
+  duration_ms: 0.53704
+  type: 'test'
+  ...
+# Subtest: ranking rejects missing, invented, duplicate and invalid model scores
+ok 12 - ranking rejects missing, invented, duplicate and invalid model scores
+  ---
+  duration_ms: 1.415968
+  type: 'test'
+  ...
+# Subtest: ranking rejects ambiguous duplicate input IDs
+ok 13 - ranking rejects ambiguous duplicate input IDs
+  ---
+  duration_ms: 0.319142
+  type: 'test'
+  ...
+# Subtest: GitHub maps API issues without authentication
+ok 14 - GitHub maps API issues without authentication
+  ---
+  duration_ms: 52.08999
+  type: 'test'
+  ...
+# Subtest: GitHub rate limits, malformed data and network errors fall back with notice
+ok 15 - GitHub rate limits, malformed data and network errors fall back with notice
+  ---
+  duration_ms: 10.148965
+  type: 'test'
+  ...
+# Subtest: OpenAI adapter sends correct endpoint, model and JSON data with bearer auth
+ok 16 - OpenAI adapter sends correct endpoint, model and JSON data with bearer auth
+  ---
+  duration_ms: 1.598458
+  type: 'test'
+  ...
+# Subtest: OpenAI adapter rejects HTTP failures and malformed structured output
+ok 17 - OpenAI adapter rejects HTTP failures and malformed structured output
+  ---
+  duration_ms: 2.220541
+  type: 'test'
+  ...
+# Subtest: Markdown report includes evidence and escapes untrusted content
+ok 18 - Markdown report includes evidence and escapes untrusted content
+  ---
+  duration_ms: 0.835634
+  type: 'test'
+  ...
+# Subtest: full offline pipeline produces five evidence-backed recommendations
+ok 19 - full offline pipeline produces five evidence-backed recommendations
+  ---
+  duration_ms: 2.676867
+  type: 'test'
+  ...
+# Subtest: CLI demo renders reproducibly and invalid options exit nonzero
+ok 20 - CLI demo renders reproducibly and invalid options exit nonzero
+  ---
+  duration_ms: 773.800442
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1078.660869
