@@ -124,3 +124,58 @@ After successful commit, update delivery status to COMPLETE.
 Fixtures are explicitly synthetic. Live GitHub and external-model adapters were verified through mocked HTTP contract tests; real Meterless/Nemotron service execution requires user-provided endpoint, key and model name and was not performed. Hackathon and bounty-board connectors currently use fixtures. Zetaris and Meterless prompt-library integrations are extension opportunities, not implemented claims.
 
 Scope: no project directories outside `open-agent-hackathon-2026/` were modified; this root state file is the requested exception. The pre-existing untracked `session-20261020T225602Z.log` was left untouched and excluded from the commit.
+
+## Zetaris Demo Challenge — 2026-10-29
+
+Status: **adapter + recording pack prepared; automated verification PASS; live account/smoke and submission remain operator steps**.
+
+Delivered in `open-agent-hackathon-2026/`:
+
+- Typed `ZetarisSource` using Zetaris SQL Editor REST API, opt-in CLI flag `--zetaris`, env-only credentials, and 2 automated contract tests.
+- README architecture and [ZETARIS-CHALLENGE.md](open-agent-hackathon-2026/ZETARIS-CHALLENGE.md) with the 2:40 script, 50-second “why amazing” segment, write-up one-liner, frame plan and ffmpeg/ffprobe commands.
+- `npm test`: **22 passed, 0 failed** after local dependency install using a temporary npm cache. No secrets added.
+- `npm run demo`: offline pipeline renders **8 federated → 6 deduplicated → 5 evidence-backed recommendations**.
+- `git diff --check`: PASS.
+
+Estimated remaining integration time after access is available: **60–120 minutes** for the first live query/table, smoke run and evidence capture; allow **2–4 hours** if the trial needs support, source registration or a new Zetaris virtual table.
+
+Operator checklist:
+
+1. Create/activate Zetaris trial for `p.szutt@neisse.ai` using the account password flow; record the assigned base URL, org ID and API key locally in `.env` only.
+2. Create or expose a small `opportunity_radar.opportunities` view/table with the documented columns, then run the live `--zetaris` command and capture the returned `source: zetaris` evidence.
+3. Verify HackOS/Discord deadline and whether real Zetaris use/account is mandatory. Public Zetaris docs confirm SQL Editor/REST access and the required Org ID + Bearer API key, but this environment had no browser tabs/apps for authenticated HackOS/Discord checking; the 3 Nov deadline is therefore still based on PW's final email, not independently confirmed here.
+4. Record voiceover and live demo, render `recording/zetaris-opportunity-radar.mp4`, inspect with `ffprobe`, and upload to the supplied Dropbox folder.
+5. Add the one-line explanation to the final write-up. Do not push; local commit is still blocked if `.git` remains read-only.
+
+### Session-2 audit (2026-10-29, workspace `zetaris-demo-20261103`)
+
+Pack integrity re-checked by reading every artifact; no build/test/network execution was possible in this session (approval callback denied all connector, git, npm and curl commands):
+
+- `src/sources/zetaris.ts`, `src/cli.ts` (`--zetaris` wiring), `src/test/zetaris.test.ts`, `ZETARIS-CHALLENGE.md`, `recording/README.md`, `dist/` — all present and mutually consistent.
+- Fixed one stale README sentence: the "Track fit and sponsor technology" section still said "this version does not connect to Zetaris". It now states that the opt-in adapter exists, is contract-tested with mocked HTTP, and that no live call was part of the original submission. This keeps the demo narrative honest and consistent with the adapter the video will show.
+- Not re-verified in this session (denied): `npm test` fresh run (the 22-passed result is from the prior session — re-run before recording), HackOS dashboard, Discord #help-desk, any Zetaris doc/site access, Dropbox folder reachability.
+- `.env.example` read was also denied by policy; its documented variable set is `ZETARIS_BASE_URL`, `ZETARIS_ORG_ID`, `ZETARIS_API_KEY`, `ZETARIS_SQL` per the adapter and ZETARIS-CHALLENGE.md.
+
+### PLAN for PW — Zetaris Demo Challenge (deadline Tuesday 3 Nov)
+
+Ordered; the critical path is Zetaris account provisioning, so start it first even before completing verification steps.
+
+| # | Step | Owner | Est. time |
+| --- | --- | --- | --- |
+| 1 | Verify on HackOS dashboard + Discord #help-desk: (a) deadline 3 Nov vs older "29 Oct" mail, (b) whether a real Zetaris account/live use is mandatory, (c) whether organizers provide shared trial access | PW | 10 min |
+| 2 | Create Zetaris account at zetaris.com with `p.szutt@neisse.ai` (worker must not create accounts). Obtain trial tenant: base URL, Org ID, Bearer API key. Store only in local `.env` | PW | 30–60 min (hours if a sales/support cycle is required) |
+| 3 | In the Zetaris console create a small real dataset: virtual table/view `opportunity_radar.opportunities` with columns `id`, `title`, `description`, `kind`, `tags`, `url`; or point `ZETARIS_SQL` at an existing table | PW | 30–90 min |
+| 4 | Re-run verification: `npm test` (expect 22 passed), `npm run build`, then live smoke `node --env-file=.env dist/cli.js --zetaris --profile "typescript agents data open-source"` — a returned record must visibly show `source: zetaris`. Save the terminal output for the video | PW | 30 min |
+| 5 | Record per ZETARIS-CHALLENGE.md: frames A–E, ≤3 min total, 40–60 s "why amazing" segment (voiceover OK), assemble with the pack's ffmpeg command, check duration with ffprobe, save `recording/zetaris-opportunity-radar.mp4` | PW | 1–2 h |
+| 6 | Upload MP4 + write-up (one-liner already drafted in ZETARIS-CHALLENGE.md) to the Dropbox folder from the 28.10 mail | PW | 15 min |
+| 7 | When `.git` is writable: local commit of `open-agent-hackathon-2026/` + `WORK-STATE.md`; never push; secrets stay out of the repo | PW | 5 min |
+
+Total PW effort: about 2.5–4.5 h plus any Zetaris provisioning wait. If account provisioning stalls, fall back to step 1's shared access or contact the organizers via Discord #help-desk before spending time on alternatives.
+
+### Session-3 verification (2026-10-29)
+
+- Fresh local verification completed from `open-agent-hackathon-2026/`: `npm test` **22 passed, 0 failed**, `npm run demo` rendered the expected offline 8→6→5 pipeline, and `git diff --check` passed.
+- Fixed the CLI report mode so `--zetaris` visibly labels output as `Zetaris live + synthetic ...`; this is important evidence for the recording and avoids calling a live-source run “offline”.
+- Public Zetaris knowledge base confirms the implementation contract: SQL Editor supports ad-hoc queries and REST access; the documented run-query example uses `https://api.enterprise.zetaris.com/api/v1.0/sql-editor/sqls/run-query`, `X-Org-ID`, Bearer authorization, and returns `data` with `headers`. Sources: https://kbase.zetaris.com/knowledge/pipeline-scheduling and https://kbase.zetaris.com/knowledge/overview-of-connecting-to-zetaris.
+- HackOS dashboard and Discord #help-desk were not independently verified: the web reader could not access the authenticated dashboard, and this environment has no browser tabs/apps. Therefore the final 3 Nov deadline and “real Zetaris use required” condition remain PW-confirmation items, not agent-verified facts.
+- No Zetaris account, password, API key, live query, video recording, or Dropbox upload was performed. No secret was added to the repository.

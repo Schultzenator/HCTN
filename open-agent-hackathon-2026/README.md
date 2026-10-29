@@ -32,6 +32,7 @@ flowchart TD
     A[Hackathon calendar fixtures] --> S[SourceProvider plugins]
     B[Bounty board fixtures] --> S
     C[GitHub Search API: live or fixture fallback] --> S
+    D0[Zetaris SQL federation: optional live source] --> S
     S --> F[Federation: concurrent collection + source notices]
     F --> D[Normalize URLs and tags; merge connected evidence]
     D --> E[Evidence gate: HTTP/S links with attribution]
@@ -44,6 +45,7 @@ flowchart TD
 ```
 
 - `src/sources/`: `SourceProvider` implementations. One provider failing does not discard healthy results. GitHub requests up to 20 recently updated open issues labeled `bounty`, without authentication, with a 10-second timeout. Rate limits, network failures and malformed payloads use clearly disclosed synthetic fixtures. Hackathon and bounty-board providers are fixtures in this version.
+- `src/sources/zetaris.ts`: optional live Zetaris adapter. It sends one SQL query to Zetaris' SQL Editor API and maps the returned `headers` + `data` table into attributed opportunities. It is opt-in and never falls back silently: a failed live source is disclosed by federation.
 - `src/core/`: federation, URL normalization, connected-component deduplication and ranking. Tracking parameters and fragments are removed; identity query parameters remain. Shared canonical evidence merges records transitively, preserving each source attribution. Equal titles alone do not merge records, so some duplicates with no shared link remain separate. Scores sort descending, then by stable ID.
 - `src/llm/`: interchangeable model providers. Mock scores reward exact profile/tag matches, evidence count and a deterministic hash tie break. External model output must include each eligible ID exactly once with a finite score in `[0,100]` and a nonempty explanation. Invalid model output fails the run; it is not silently replaced with mock output.
 - `src/report/`: Markdown rendering with escaped source text, score explanations, provenance links and source notices. A link is evidence provenance, not confirmation of an offer, payment, eligibility or deadline.
@@ -110,9 +112,9 @@ Custom sources return normalized `Opportunity` records and should retain stable 
 
 For track 01, **Solving Fragmented Intelligence**, the core contribution is a complete path from three fragmented source types to one attributed recommendation list. Federation and evidence-connected deduplication preserve provenance rather than losing it in a plain text summary. The demo makes the consolidation and rejected rumor visible.
 
-The OpenAI-compatible adapter provides an integration point for **NVIDIA Nemotron via Meterless**, once account-specific configuration is supplied. Meterless prompt-library integration is not implemented. The source interface is an extension point for a **Zetaris** federated view; this version does not connect to Zetaris or claim a completed sponsor integration. No Cursor integration or sponsor bonus is claimed. Hackathon dates, prizes and eligibility should be verified separately before submission.
+The OpenAI-compatible adapter provides an integration point for **NVIDIA Nemotron via Meterless**, once account-specific configuration is supplied. Meterless prompt-library integration is not implemented. `src/sources/zetaris.ts` provides an opt-in **Zetaris** federated source: it sends one SQL query to the Zetaris SQL Editor API and maps the returned rows into source-attributed opportunities behind the same `SourceProvider` contract. The adapter is covered by mocked HTTP contract tests; a live query requires Zetaris credentials (see [ZETARIS-CHALLENGE.md](ZETARIS-CHALLENGE.md)), and no live call was part of the original hackathon submission. No Cursor integration or sponsor bonus is claimed. Hackathon dates, prizes and eligibility should be verified separately before submission.
 
-See [DEMO.md](DEMO.md) for a concise walkthrough and reproducible validation commands.
+See [DEMO.md](DEMO.md) for a concise walkthrough and reproducible validation commands. See [ZETARIS-CHALLENGE.md](ZETARIS-CHALLENGE.md) for the live integration contract and recording pack.
 
 ## License
 

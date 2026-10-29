@@ -7,4 +7,5 @@ export * from './llm/mock.js';
 export * from './llm/openai.js';
 export * from './sources/fixtures.js';
 export * from './sources/github.js';
+export * from './sources/zetaris.js';
 export * from './report/markdown.js';
