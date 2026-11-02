@@ -124,6 +124,6 @@ The server validates Host/Origin, serves no CORS permissions, binds only loopbac
 
 ## Delivery status
 
-Implemented and checked offline; see root `WORK-STATE.md` for exact evidence and limits. **Not a completed hackathon submission.** Remaining owner work: configure/authorize Twitch, verify on the actual channel and OBS, record a public English video ≤3 minutes without showing credentials, include the real Codex session ID, publish the repository and submit on Devpost. Do not describe fixture footage as live Twitch footage. Recording script: [DEMO.md](DEMO.md).
+Submitted to the **Codex x TwitchCon Hackathon** on Devpost (2026-10-25): <https://devpost.com/software/chat-relay-studio>. Demo video (unlisted): <https://youtu.be/bEv21X1N55g> - real votes typed in a live Twitch chat are parsed, tallied and approved into story scenes end to end. Main Codex build session ID: `01a17371-8437-7180-96be-a7b97b8af240`. Offline verification evidence: root `WORK-STATE.md` and [verification/](verification/) (tests, typecheck, fixture smoke). Recording script: [DEMO.md](DEMO.md).
 
-MIT licensed. No push, publication, Twitch account creation or submission is performed by the application.
+MIT licensed.
