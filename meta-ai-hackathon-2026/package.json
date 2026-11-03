@@ -1,0 +1,19 @@
+{
+  "name": "meta-ai-hackathon-2026",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Household Ops Agent built with Meta Model API",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "demo": "npm run build && node dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
