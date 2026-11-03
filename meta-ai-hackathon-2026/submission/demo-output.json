@@ -1,0 +1,60 @@
+{
+  "mode": "mock",
+  "models": [
+    "sam-3.1",
+    "muse-spark-1.3",
+    "muse-image-1.0"
+  ],
+  "plan": {
+    "title": "Calm evening, zero chaos",
+    "summary": "Use what is already at home first, then split tasks by time and energy.",
+    "steps": [
+      {
+        "time": "18:00",
+        "owner": "host",
+        "task": "Prep the dinner base from what is on hand",
+        "why": "Fewer shopping trips and no last-minute decisions."
+      },
+      {
+        "time": "19:00",
+        "owner": "everyone",
+        "task": "Twenty focused minutes resetting one zone",
+        "why": "A small, closed time-box shows a visible result."
+      },
+      {
+        "time": "20:00",
+        "owner": "host",
+        "task": "Close the day with a short plan for tomorrow",
+        "why": "The morning starts from a ready-made decision."
+      }
+    ],
+    "assumptions": [
+      "The photo shows a sample kitchen zone."
+    ],
+    "detectedObjects": [],
+    "visual": {
+      "title": "Evening plan visual",
+      "description": "A warm, realistic editorial illustration of this household plan: Calm evening, zero chaos. Use what is already at home first, then split tasks by time and energy.. No text, no logos."
+    }
+  },
+  "trace": [
+    {
+      "stage": "perception",
+      "model": "sam-3.1",
+      "status": "mock",
+      "note": "skipped: no photo"
+    },
+    {
+      "stage": "planning",
+      "model": "muse-spark-1.3",
+      "status": "mock",
+      "note": "3 steps with reasons"
+    },
+    {
+      "stage": "visualization",
+      "model": "muse-image-1.0",
+      "status": "mock",
+      "note": "mock/fallback, no image"
+    }
+  ]
+}

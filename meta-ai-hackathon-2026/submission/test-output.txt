@@ -1,0 +1,36 @@
+
+> meta-ai-hackathon-2026@0.1.0 test
+> npm run build && node --test dist/test/*.test.js
+
+
+> meta-ai-hackathon-2026@0.1.0 build
+> tsc
+
+TAP version 13
+# Subtest: mock smoke: produces a traceable multi-model household plan
+ok 1 - mock smoke: produces a traceable multi-model household plan
+  ---
+  duration_ms: 65.279028
+  type: 'test'
+  ...
+# Subtest: mock smoke without photo remains usable
+ok 2 - mock smoke without photo remains usable
+  ---
+  duration_ms: 7.226483
+  type: 'test'
+  ...
+# Subtest: HTTP adapter uses the documented Responses and Images endpoints
+ok 3 - HTTP adapter uses the documented Responses and Images endpoints
+  ---
+  duration_ms: 474.362668
+  type: 'test'
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 3
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4050.454901
