@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:10,000
+Household Ops Agent - demo for the Meta Global AI Developer Hackathon,
+Indie Developer Track: Build for Your World.
+
+2
+00:00:10,000 --> 00:00:22,000
+The problem: evenings are a decision problem.
+Goal: dinner and a quick kitchen reset after work.
+
+3
+00:00:22,000 --> 00:00:38,000
+npm run demo - Muse Spark 1.3 turns the goal, constraints and inventory
+into three owned steps with reasons.
+
+4
+00:00:38,000 --> 00:00:50,000
+Grounded perception with SAM 3.1: with a photo it detects household objects.
+This run skips it honestly and says so.
+
+5
+00:00:50,000 --> 00:01:04,000
+Execution trace: every model stage visible.
+Mock output is always labeled mock - never fakes a live API call.
+
+6
+00:01:04,000 --> 00:01:14,000
+One API key switches to live mode via OpenAI-compatible
+Meta Model API endpoints, with a deterministic mock fallback.
+
+7
+00:01:14,000 --> 00:01:22,000
+Three tests pass on node:test:
+the photo-assisted path and the no-photo fallback.
+
+8
+00:01:22,000 --> 00:01:32,000
+Try it: public repository on GitHub -
+npm install && npm test && npm run demo.
