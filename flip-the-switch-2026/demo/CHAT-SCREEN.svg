@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#151a22"/>
+  <rect width="270" height="760" fill="#202733"/>
+  <text x="28" y="52" fill="#f7fafc" font-family="Arial" font-size="24" font-weight="700">Switch rooms</text>
+  <text x="28" y="112" fill="#9aa7b8" font-family="Arial" font-size="18"># graveyard-foreman</text>
+  <rect x="270" width="930" height="78" fill="#293343"/>
+  <text x="305" y="48" fill="#f7fafc" font-family="Arial" font-size="24" font-weight="700">graveyard-foreman</text>
+  <text x="305" y="69" fill="#9aa7b8" font-family="Arial" font-size="14">human + agent incident room</text>
+  <g font-family="Arial" font-size="17">
+    <text x="315" y="130" fill="#74b9ff" font-weight="700">Piotr · human</text>
+    <text x="315" y="158" fill="#e6edf3">payments-api: all users cannot pay.</text>
+    <text x="315" y="183" fill="#e6edf3">100% 5xx after deploy 1842 at 09:42Z.</text>
+    <text x="315" y="231" fill="#ffcc66" font-weight="700">Graveyard Foreman · agent</text>
+    <text x="315" y="259" fill="#e6edf3">P0. Freeze deploys, page on-call, inspect last deploy.</text>
+    <text x="315" y="284" fill="#9aa7b8">Approval required before any action.</text>
+    <rect x="315" y="310" width="150" height="42" rx="8" fill="#2d8a5b"/>
+    <text x="350" y="338" fill="white" font-weight="700">approve</text>
+    <text x="315" y="401" fill="#74b9ff" font-weight="700">Piotr · human</text>
+    <text x="315" y="429" fill="#e6edf3">approve</text>
+    <text x="315" y="477" fill="#ffcc66" font-weight="700">Graveyard Foreman · agent</text>
+    <rect x="315" y="495" width="700" height="56" rx="8" fill="#263d34"/>
+    <text x="335" y="529" fill="#a8f0c7" font-weight="700">ACTION RECEIPT · simulated, no production side effect</text>
+    <text x="315" y="610" fill="#9aa7b8">The person decides. The room keeps the audit trail.</text>
+  </g>
+</svg>
