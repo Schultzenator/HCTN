@@ -1,22 +1,20 @@
 # Flip the Switch submission kit
 
-Status: ready for one-pass submission; receipt pending until the form is submitted.
+Status: **SUBMITTED 2026-11-04 ~15:15Z** — Track 1 (Best Business Workflow), solo entry. Receipt: ../../SUBMISSION-RECEIPT.txt. Editable until 2026-11-07 23:59 IST.
 
-## Copy
+## What was submitted
 
-- Project: `Graveyard Foreman`
-- Track: `Best Business Workflow (Track 1)`
+- Project title: `Graveyard Foreman — human-gated incident triage in a Switch room`
+- Track: `Best Business Workflow` (only)
 - Repository: `https://github.com/Schultzenator/HCTN/tree/main/flip-the-switch-2026`
-- Demo asset: record a 60–90 second Switch-room screencast using `demo/CHAT-TRANSCRIPT.md`; attach the resulting public URL.
-- One-line pitch: `A human-gated incident foreman that turns noisy watchdog alerts into an approved, auditable next action inside the team chat.`
-- Switch usage: `Switch supplies the shared room where the human operator and the Foreman agent read the same incident context, proposal, decision, and receipt.`
-- Reproduction: `Clone HCTN, cd to flip-the-switch-2026, run python3 foreman.py demo and python3 -m unittest -v, then load switch-room.yaml into Switch Console.`
+- Demo video: `https://github.com/Schultzenator/HCTN/releases/download/demo-video-20261104/graveyard-foreman-demo.mp4`
+- Description, How-you-used-Switch and likes/improvements texts: recorded in full in `../SUBMISSION-RECEIPT.txt` and the submit-page state; shorter variants in this file's history.
 
-## Final checklist
+## Checklist
 
-- [ ] Public repository URL resolves
-- [ ] Public demo video/screencast URL added
-- [ ] Switch is visible in the demo and README
-- [ ] Human approval and rejection are visible in the chat
-- [ ] Submission form sent before 2026-11-07 20:29 UTC
-- [ ] Receipt screenshot saved beside this file or linked from `WORK-STATE.md`
+- [x] Public repository URL resolves
+- [x] Public demo video URL added (GitHub release asset; form suggested YouTube/Loom — swap if organizers require it)
+- [x] Switch visible in demo and README
+- [x] Human approval and rejection visible in the chat
+- [x] Submission sent 2026-11-04, well before the 2026-11-07 20:29 PL deadline
+- [x] Receipt saved: `WORK-STATE.md` + `SUBMISSION-RECEIPT.txt`
