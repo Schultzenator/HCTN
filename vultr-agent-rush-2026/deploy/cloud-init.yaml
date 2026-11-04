@@ -1,0 +1,11 @@
+#cloud-config
+package_update: true
+packages:
+  - docker.io
+  - docker-compose-plugin
+  - git
+runcmd:
+  - [sh, -c, "systemctl enable --now docker"]
+  - [sh, -c, "install -d -m 0755 /opt/containment-foreman"]
+  - [sh, -c, "git clone https://github.com/Schultzenator/HCTN.git /opt/hctn"]
+  - [sh, -c, "cd /opt/hctn/vultr-agent-rush-2026/deploy && test -f env.sh && chmod 600 env.sh || true"]
