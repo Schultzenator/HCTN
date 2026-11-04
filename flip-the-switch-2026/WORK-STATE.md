@@ -11,6 +11,7 @@ Updated: 2026-11-04
 - [x] Switch room template added without credentials.
 - [x] Screencast-ready chat transcript added.
 - [x] Submission kit prepared.
+- [x] Project pushed to `Schultzenator/HCTN` (`main`, commit `7916b54`).
 - [ ] Live Switch-room screencast URL.
 - [ ] WeMakeDevs submission receipt/screenshot.
 
@@ -18,7 +19,7 @@ Updated: 2026-11-04
 
 `READY_KIT / NOT_SUBMITTED`
 
-The local build is complete. A live bridge and the external submission form still require a usable Switch/bridge session and a public demo URL. This status must change to `SUBMITTED` only after the receipt is captured.
+The local build and public repository are complete. The WeMakeDevs login rejected the stored password; reset mail yielded only an expired token during this run. A live bridge/screencast and the external submission form still require a usable session and public demo URL. This status must change to `SUBMITTED` only after the receipt is captured.
 
 ## Verification
 
