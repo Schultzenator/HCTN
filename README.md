@@ -5,6 +5,7 @@ Public workspace for open-source bounty and hackathon projects.
 ## Projects
 
 | Directory | Project | Stack |
+|  | SwarmBid - policy-gated swarm coordination market: agents bid for jobs, containment-first policy engine rejects risky bids, cheapest compliant bid wins with auditable receipt (NEAR Hackathon 2026, AI Swarms + Security tracks) | TypeScript, near-api-js, testnet RPC |
 |---|---|---|
 | `agentcart/` | AgentCart - autonomous shopping agent, end-to-end PayPal sandbox purchase flow (PayPal AI Hackathon 2026) | Express, TypeScript |
 | `amazon-build-ship-shape-2026/` | Household Ops MCP - self-hosted MCP server, Streamable HTTP, Alexa+ track (Amazon Build, Ship, Shape 2026) | TypeScript, MCP |
